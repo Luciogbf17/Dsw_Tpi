@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TpiDSW.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b55203939b4ed33821f00d1c0dab232253162734")]
 [assembly: System.Reflection.AssemblyProductAttribute("TpiDSW.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TpiDSW.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
