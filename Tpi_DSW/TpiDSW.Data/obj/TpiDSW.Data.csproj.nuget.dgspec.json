@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/luciopc/RiderProjects/Tpi_DSW/TpiDSW.Data/TpiDSW.Data.csproj": {}
+    "/home/luciopc/Escritorio/Facu/DSW_Compartido/Ejercicios/TPI/Dsw_Tpi/Tpi_DSW/TpiDSW.Data/TpiDSW.Data.csproj": {}
   },
   "projects": {
-    "/home/luciopc/RiderProjects/Tpi_DSW/TpiDSW.Data/TpiDSW.Data.csproj": {
+    "/home/luciopc/Escritorio/Facu/DSW_Compartido/Ejercicios/TPI/Dsw_Tpi/Tpi_DSW/TpiDSW.Data/TpiDSW.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/luciopc/RiderProjects/Tpi_DSW/TpiDSW.Data/TpiDSW.Data.csproj",
+        "projectUniqueName": "/home/luciopc/Escritorio/Facu/DSW_Compartido/Ejercicios/TPI/Dsw_Tpi/Tpi_DSW/TpiDSW.Data/TpiDSW.Data.csproj",
         "projectName": "TpiDSW.Data",
-        "projectPath": "/home/luciopc/RiderProjects/Tpi_DSW/TpiDSW.Data/TpiDSW.Data.csproj",
+        "projectPath": "/home/luciopc/Escritorio/Facu/DSW_Compartido/Ejercicios/TPI/Dsw_Tpi/Tpi_DSW/TpiDSW.Data/TpiDSW.Data.csproj",
         "packagesPath": "/home/luciopc/.nuget/packages/",
-        "outputPath": "/home/luciopc/RiderProjects/Tpi_DSW/TpiDSW.Data/obj/",
+        "outputPath": "/home/luciopc/Escritorio/Facu/DSW_Compartido/Ejercicios/TPI/Dsw_Tpi/Tpi_DSW/TpiDSW.Data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/luciopc/.nuget/NuGet/NuGet.Config"

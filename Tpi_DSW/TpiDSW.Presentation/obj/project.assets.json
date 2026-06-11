@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/luciopc/RiderProjects/Tpi_DSW/TpiDSW.Presentation/TpiDSW.Presentation.csproj",
+      "projectUniqueName": "/home/luciopc/Escritorio/Facu/DSW_Compartido/Ejercicios/TPI/Dsw_Tpi/Tpi_DSW/TpiDSW.Presentation/TpiDSW.Presentation.csproj",
       "projectName": "TpiDSW.Presentation",
-      "projectPath": "/home/luciopc/RiderProjects/Tpi_DSW/TpiDSW.Presentation/TpiDSW.Presentation.csproj",
+      "projectPath": "/home/luciopc/Escritorio/Facu/DSW_Compartido/Ejercicios/TPI/Dsw_Tpi/Tpi_DSW/TpiDSW.Presentation/TpiDSW.Presentation.csproj",
       "packagesPath": "/home/luciopc/.nuget/packages/",
-      "outputPath": "/home/luciopc/RiderProjects/Tpi_DSW/TpiDSW.Presentation/obj/",
+      "outputPath": "/home/luciopc/Escritorio/Facu/DSW_Compartido/Ejercicios/TPI/Dsw_Tpi/Tpi_DSW/TpiDSW.Presentation/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/luciopc/.nuget/NuGet/NuGet.Config"
