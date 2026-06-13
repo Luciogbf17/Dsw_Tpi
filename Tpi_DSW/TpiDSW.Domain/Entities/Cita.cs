@@ -1,5 +1,7 @@
 ﻿using System;
-namespace MedicalAppointments.Domain.Entities
+using TpiDSW.Domain.Enums;
+
+namespace TpiDSW.Domain.Entities;
 {
     public class Cita
     {
