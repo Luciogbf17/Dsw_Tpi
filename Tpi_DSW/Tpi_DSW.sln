@@ -1,10 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.7.11911.148 stable
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TpiDSW.Presentation", "TpiDSW.Presentation\TpiDSW.Presentation.csproj", "{2B0BC06F-AEDD-4EF9-86E3-5CBBB1683820}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TpiDSW.Domain", "TpiDSW.Domain\TpiDSW.Domain.csproj", "{EFC59BB2-1399-4817-9506-64D925F1E8F6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TpiDSW.Data", "TpiDSW.Data\TpiDSW.Data.csproj", "{B4EEE236-DBDB-4E83-8C98-A8485D6314CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TpiDSW.Application", "Tpi_Dsw.Application\TpiDSW.Application.csproj", "{B62FD52D-BC05-4F2A-98EA-E3D24E62C194}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,5 +29,15 @@ Global
 		{B4EEE236-DBDB-4E83-8C98-A8485D6314CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4EEE236-DBDB-4E83-8C98-A8485D6314CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4EEE236-DBDB-4E83-8C98-A8485D6314CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B62FD52D-BC05-4F2A-98EA-E3D24E62C194}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B62FD52D-BC05-4F2A-98EA-E3D24E62C194}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B62FD52D-BC05-4F2A-98EA-E3D24E62C194}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B62FD52D-BC05-4F2A-98EA-E3D24E62C194}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6F0B1F99-0DB5-46A7-8B08-D025C2185986}
 	EndGlobalSection
 EndGlobal
