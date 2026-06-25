@@ -1,5 +1,6 @@
 ﻿using System;
 
+namespace TpiDSW.Domain.Entities;
 public class Especialidad
 {
     private string _nombre;

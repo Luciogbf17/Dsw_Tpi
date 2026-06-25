@@ -1,5 +1,6 @@
 ﻿using System;
 
+namespace TpiDSW.Domain.Entities;
 public class Medico
 {
     private string _nombre;
@@ -34,4 +35,5 @@ public class Medico
         get { return _especialidad; }
         set { _especialidad = value; }
     }
+}
 }
