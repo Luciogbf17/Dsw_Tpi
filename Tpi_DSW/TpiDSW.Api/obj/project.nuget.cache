@@ -1,0 +1,127 @@
+{
+  "version": 2,
+  "dgSpecHash": "Yn28qVfp124=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lucio\\Desktop\\Dsw\\TPI\\Dsw_Tpi\\Tpi_DSW\\TpiDSW.Api\\TpiDSW.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lucio\\.nuget\\packages\\microsoft.aspnet.webapi.client\\4.0.20710\\microsoft.aspnet.webapi.client.4.0.20710.nupkg.sha512",
+    "C:\\Users\\lucio\\.nuget\\packages\\microsoft.aspnet.webapi.core\\4.0.20710\\microsoft.aspnet.webapi.core.4.0.20710.nupkg.sha512",
+    "C:\\Users\\lucio\\.nuget\\packages\\microsoft.aspnet.webapi.webhost\\4.0.20710\\microsoft.aspnet.webapi.webhost.4.0.20710.nupkg.sha512",
+    "C:\\Users\\lucio\\.nuget\\packages\\microsoft.net.http\\2.0.20710\\microsoft.net.http.2.0.20710.nupkg.sha512",
+    "C:\\Users\\lucio\\.nuget\\packages\\microsoft.web.infrastructure\\1.0.0\\microsoft.web.infrastructure.1.0.0.nupkg.sha512",
+    "C:\\Users\\lucio\\.nuget\\packages\\newtonsoft.json\\7.0.1\\newtonsoft.json.7.0.1.nupkg.sha512",
+    "C:\\Users\\lucio\\.nuget\\packages\\swashbuckle\\5.6.0\\swashbuckle.5.6.0.nupkg.sha512",
+    "C:\\Users\\lucio\\.nuget\\packages\\swashbuckle.core\\5.6.0\\swashbuckle.core.5.6.0.nupkg.sha512",
+    "C:\\Users\\lucio\\.nuget\\packages\\webactivatorex\\2.0.0\\webactivatorex.2.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "El paquete \"Newtonsoft.Json\" 7.0.1 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-5crp-9r3c-p9vr",
+      "projectPath": "C:\\Users\\lucio\\Desktop\\Dsw\\TPI\\Dsw_Tpi\\Tpi_DSW\\TpiDSW.Api\\TpiDSW.Api.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\lucio\\Desktop\\Dsw\\TPI\\Dsw_Tpi\\Tpi_DSW\\TpiDSW.Api\\TpiDSW.Api.csproj",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "El paquete \"Microsoft.AspNet.WebApi.Client 4.0.20710\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net10.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "projectPath": "C:\\Users\\lucio\\Desktop\\Dsw\\TPI\\Dsw_Tpi\\Tpi_DSW\\TpiDSW.Api\\TpiDSW.Api.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\lucio\\Desktop\\Dsw\\TPI\\Dsw_Tpi\\Tpi_DSW\\TpiDSW.Api\\TpiDSW.Api.csproj",
+      "libraryId": "Microsoft.AspNet.WebApi.Client",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "El paquete \"Microsoft.AspNet.WebApi.Core 4.0.20710\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net10.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "projectPath": "C:\\Users\\lucio\\Desktop\\Dsw\\TPI\\Dsw_Tpi\\Tpi_DSW\\TpiDSW.Api\\TpiDSW.Api.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\lucio\\Desktop\\Dsw\\TPI\\Dsw_Tpi\\Tpi_DSW\\TpiDSW.Api\\TpiDSW.Api.csproj",
+      "libraryId": "Microsoft.AspNet.WebApi.Core",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "El paquete \"Microsoft.AspNet.WebApi.WebHost 4.0.20710\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net10.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "projectPath": "C:\\Users\\lucio\\Desktop\\Dsw\\TPI\\Dsw_Tpi\\Tpi_DSW\\TpiDSW.Api\\TpiDSW.Api.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\lucio\\Desktop\\Dsw\\TPI\\Dsw_Tpi\\Tpi_DSW\\TpiDSW.Api\\TpiDSW.Api.csproj",
+      "libraryId": "Microsoft.AspNet.WebApi.WebHost",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "El paquete \"Microsoft.Net.Http 2.0.20710\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net10.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "projectPath": "C:\\Users\\lucio\\Desktop\\Dsw\\TPI\\Dsw_Tpi\\Tpi_DSW\\TpiDSW.Api\\TpiDSW.Api.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\lucio\\Desktop\\Dsw\\TPI\\Dsw_Tpi\\Tpi_DSW\\TpiDSW.Api\\TpiDSW.Api.csproj",
+      "libraryId": "Microsoft.Net.Http",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "El paquete \"Microsoft.Web.Infrastructure 1.0.0\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net10.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "projectPath": "C:\\Users\\lucio\\Desktop\\Dsw\\TPI\\Dsw_Tpi\\Tpi_DSW\\TpiDSW.Api\\TpiDSW.Api.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\lucio\\Desktop\\Dsw\\TPI\\Dsw_Tpi\\Tpi_DSW\\TpiDSW.Api\\TpiDSW.Api.csproj",
+      "libraryId": "Microsoft.Web.Infrastructure",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "El paquete \"Newtonsoft.Json 7.0.1\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net10.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "projectPath": "C:\\Users\\lucio\\Desktop\\Dsw\\TPI\\Dsw_Tpi\\Tpi_DSW\\TpiDSW.Api\\TpiDSW.Api.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\lucio\\Desktop\\Dsw\\TPI\\Dsw_Tpi\\Tpi_DSW\\TpiDSW.Api\\TpiDSW.Api.csproj",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "El paquete \"Swashbuckle.Core 5.6.0\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net10.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "projectPath": "C:\\Users\\lucio\\Desktop\\Dsw\\TPI\\Dsw_Tpi\\Tpi_DSW\\TpiDSW.Api\\TpiDSW.Api.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\lucio\\Desktop\\Dsw\\TPI\\Dsw_Tpi\\Tpi_DSW\\TpiDSW.Api\\TpiDSW.Api.csproj",
+      "libraryId": "Swashbuckle.Core",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "El paquete \"WebActivatorEx 2.0.0\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net10.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "projectPath": "C:\\Users\\lucio\\Desktop\\Dsw\\TPI\\Dsw_Tpi\\Tpi_DSW\\TpiDSW.Api\\TpiDSW.Api.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\lucio\\Desktop\\Dsw\\TPI\\Dsw_Tpi\\Tpi_DSW\\TpiDSW.Api\\TpiDSW.Api.csproj",
+      "libraryId": "WebActivatorEx",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
+}
