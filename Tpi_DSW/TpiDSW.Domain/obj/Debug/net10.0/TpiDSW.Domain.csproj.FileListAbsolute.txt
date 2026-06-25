@@ -1,0 +1,5 @@
+C:\Users\lucio\Desktop\Dsw\TPI\Dsw_Tpi\Tpi_DSW\TpiDSW.Domain\obj\Debug\net10.0\TpiDSW.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lucio\Desktop\Dsw\TPI\Dsw_Tpi\Tpi_DSW\TpiDSW.Domain\obj\Debug\net10.0\TpiDSW.Domain.AssemblyInfoInputs.cache
+C:\Users\lucio\Desktop\Dsw\TPI\Dsw_Tpi\Tpi_DSW\TpiDSW.Domain\obj\Debug\net10.0\TpiDSW.Domain.AssemblyInfo.cs
+C:\Users\lucio\Desktop\Dsw\TPI\Dsw_Tpi\Tpi_DSW\TpiDSW.Domain\obj\Debug\net10.0\TpiDSW.Domain.csproj.CoreCompileInputs.cache
+C:\Users\lucio\Desktop\Dsw\TPI\Dsw_Tpi\Tpi_DSW\TpiDSW.Domain\obj\Debug\net10.0\TpiDSW.Domain.sourcelink.json
