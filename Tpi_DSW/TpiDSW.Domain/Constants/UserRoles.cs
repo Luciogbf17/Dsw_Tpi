@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace TpiDSW.Domain.Constants
+﻿namespace TpiDSW.Domain.Constants
 {
-    internal class UserRoles
+    public static class UserRoles
     {
+        public const string ADMINISTRADOR = "ADMINISTRADOR";
+
+        public const string PACIENTE = "PACIENTE";
     }
 }
