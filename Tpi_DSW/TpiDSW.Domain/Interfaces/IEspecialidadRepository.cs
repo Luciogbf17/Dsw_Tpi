@@ -1,20 +1,20 @@
 ﻿using System;
-using MedicalAppointments.Domain.Entities;
+using System.Collections.Generic;
+using TpiDSW.Domain.Entities;
 
-namespace TpiDSW.Domain.Interfaces
+namespace TpiDSW.Domain.Interfaces;
+
+public interface IEspecialidadRepository
 {
-    public interface IEspecialidadRepository
-    {
-        List<Especialidad> GetAll();
+    List<Especialidad> GetAll();
 
-        Especialidad? GetById(Guid id);
+    Especialidad? GetById(Guid id);
 
-        List<Especialidad> GetByNombre(string nombre);
+    List<Especialidad> GetByNombre(string nombre);
 
-        void Add(Especialidad especialidad);
+    void Add(Especialidad especialidad);
 
-        void Update(Especialidad especialidad);
+    void Update(Especialidad especialidad);
 
-        void Delete(Guid id);
-    }
+    void Delete(Guid id);
 }

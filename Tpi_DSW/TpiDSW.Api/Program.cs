@@ -1,35 +1,36 @@
+using TpiDSW.Api.Middleware;
+using TpiDSW.Data.Sources;
+using TpiDSW.Domain.Interfaces;
+
 namespace TpiDSW.Api;
 
 public class Program
 {
     public static void Main(string[] args)
     {
-        var builder = WebApplication.CreateBuilder(args);
-
-        // Add services to the container.
+        WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
         builder.Services.AddControllers();
         builder.Services.AddSwaggerGen();
         builder.Services.AddHealthChecks();
 
-        var app = builder.Build();
+        builder.Services.AddSingleton<IEspecialidadRepository, EspecialidadRepository>();
+        builder.Services.AddSingleton<IMedicoRepository, MedicoRepository>();
+        builder.Services.AddSingleton<IDisponibilidadRepository, DisponibilidadRepository>();
+
+        WebApplication app = builder.Build();
+
+        app.UseMiddleware<ExceptionMiddleware>();
+
         app.UseSwagger();
         app.UseSwaggerUI();
-        app.UseHealthChecks("/healt-check");
 
-        // Configure the HTTP request pipeline.
-        if (app.Environment.IsDevelopment())
-        {
-            
-            app.UseSwagger();
-        }
+        app.UseHealthChecks("/health-check");
 
         app.UseAuthorization();
 
         app.MapControllers();
 
         app.Run();
-
     }
 }
-

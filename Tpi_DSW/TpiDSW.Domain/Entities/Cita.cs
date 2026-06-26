@@ -1,7 +1,7 @@
 ﻿using System;
-using TpiDSW.Domain.Enums;
+using TpiDSW.Domain.Enum;
 
-namespace TpiDSW.Domain.Entities;
+namespace TpiDSW.Domain.Entities
 {
     public class Cita
     {

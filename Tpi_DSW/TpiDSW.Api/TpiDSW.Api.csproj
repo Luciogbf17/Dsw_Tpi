@@ -17,4 +17,10 @@
     <Folder Include="Models\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TpiDSW.Application\TpiDSW.Application.csproj" />
+    <ProjectReference Include="..\TpiDSW.Data\TpiDSW.Data.csproj" />
+    <ProjectReference Include="..\TpiDSW.Domain\TpiDSW.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
