@@ -1,5 +1,4 @@
 ﻿using System;
-using TpiDSW.Domain.Enum;
 
 namespace TpiDSW.Domain.Entities
 {
@@ -8,17 +7,17 @@ namespace TpiDSW.Domain.Entities
         private Guid _id;
         private DateTime _fechaDeAtencion;
         private DateTime? _fechaDeCancelacion;
-        private CitaEstado _estado;
+        private TpiDSW.Domain.Enum.CitaEstado _estado;
         private bool _deleted;
 
         public Cita()
         {
             _id = Guid.NewGuid();
-            _estado = CitaEstado.Confirmada;
+            _estado = TpiDSW.Domain.Enum.CitaEstado.Confirmada;
             _deleted = false;
         }
 
-        public Cita(DateTime fechaDeAtencion, CitaEstado estado)
+        public Cita(DateTime fechaDeAtencion, TpiDSW.Domain.Enum.CitaEstado estado)
         {
             _id = Guid.NewGuid();
             _fechaDeAtencion = fechaDeAtencion;
@@ -44,7 +43,7 @@ namespace TpiDSW.Domain.Entities
             set { _fechaDeCancelacion = value; }
         }
 
-        public CitaEstado Estado
+        public TpiDSW.Domain.Enum.CitaEstado Estado
         {
             get { return _estado; }
             set { _estado = value; }

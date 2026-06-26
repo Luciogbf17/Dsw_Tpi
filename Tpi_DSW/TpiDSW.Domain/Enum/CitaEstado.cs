@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace MedicalAppointments.Domain.Enums
+﻿namespace TpiDSW.Domain.Enum
 {
     public enum CitaEstado
     {
