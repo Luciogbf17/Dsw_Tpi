@@ -1,5 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
 using TpiDSW.Domain.Entities;
 
 namespace TpiDSW.Domain.Interfaces;
@@ -9,6 +7,10 @@ public interface ICitaRepository
     List<Cita> GetAll();
 
     Cita? GetById(Guid id);
+
+    List<Cita> GetByPacienteId(Guid pacienteId);
+
+    List<Cita> GetByFecha(DateTime fecha);
 
     void Add(Cita cita);
 

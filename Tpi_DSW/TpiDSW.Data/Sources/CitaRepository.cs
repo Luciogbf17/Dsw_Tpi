@@ -1,47 +1,73 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using TpiDSW.Domain.Interfaces;
 using TpiDSW.Domain.Entities;
+using TpiDSW.Domain.Enum;
+using TpiDSW.Domain.Interfaces;
 
+namespace TpiDSW.Data.Sources;
 
-namespace TpiDSW.Data.Sources
+public class CitaRepository : ICitaRepository
 {
-    public class CitaRepository : ICitaRepository 
+    private static readonly List<Cita> _citas = new List<Cita>();
+
+    public List<Cita> GetAll()
     {
-        public void Add(Cita cita)
+        return _citas
+            .Where(cita => !cita.Deleted)
+            .ToList();
+    }
+
+    public Cita? GetById(Guid id)
+    {
+        return _citas.FirstOrDefault(cita => cita.Id == id && !cita.Deleted);
+    }
+
+    public List<Cita> GetByPacienteId(Guid pacienteId)
+    {
+        return _citas
+            .Where(cita => cita.PacienteId == pacienteId && !cita.Deleted)
+            .ToList();
+    }
+
+    public List<Cita> GetByFecha(DateTime fecha)
+    {
+        return _citas
+            .Where(cita => cita.FechaDeAtencion.Date == fecha.Date && !cita.Deleted)
+            .ToList();
+    }
+
+    public void Add(Cita cita)
+    {
+        _citas.Add(cita);
+    }
+
+    public void Update(Cita cita)
+    {
+        Cita? citaExistente = GetById(cita.Id);
+
+        if (citaExistente is null)
         {
-            throw new NotImplementedException();
+            return;
         }
 
-        public void Delete(Guid id)
+        citaExistente.TurnoId = cita.TurnoId;
+        citaExistente.PacienteId = cita.PacienteId;
+        citaExistente.FechaDeAtencion = cita.FechaDeAtencion;
+        citaExistente.FechaDeCancelacion = cita.FechaDeCancelacion;
+        citaExistente.Estado = cita.Estado;
+        citaExistente.Deleted = cita.Deleted;
+        citaExistente.Motivo = cita.Motivo;
+    }
+
+    public void Delete(Guid id)
+    {
+        Cita? cita = GetById(id);
+
+        if (cita is null)
         {
-            throw new NotImplementedException();
+            return;
         }
 
-        public List<Cita> GetAll()
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<Cita> GetByFecha(DateTime fecha)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Cita? GetById(Guid id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<Cita> GetByPacienteId(Guid pacienteId)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Update(Cita cita)
-        {
-            throw new NotImplementedException();
-        }
+        cita.Estado = CitaEstado.Cancelada;
+        cita.FechaDeCancelacion = DateTime.Now;
+        cita.Deleted = true;
     }
 }

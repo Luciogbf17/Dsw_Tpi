@@ -1,5 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
 using TpiDSW.Domain.Entities;
 
 namespace TpiDSW.Domain.Interfaces;

@@ -1,9 +1,9 @@
-﻿namespace TpiDSW.Domain.Enum
+namespace TpiDSW.Domain.Enum;
+
+public enum CitaEstado
 {
-    public enum CitaEstado
-    {
-        Confirmada,
-        Cancelada,
-        Completada
-    }
+    Confirmada = 1,
+    Cancelada = 2,
+    Completada = 3,
+    NoAsistio = 4
 }
