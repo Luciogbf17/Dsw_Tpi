@@ -1,5 +1,5 @@
 ﻿using System;
-namespace TpiDSW.Domain.Entities;
+namespace TpiDSW.Domain.Entities
 {
     public class Paciente
     {

@@ -1,23 +1,18 @@
 ﻿using System;
-
-using MedicalAppointments.Domain.Entities;
+using System.Collections.Generic;
+using TpiDSW.Domain.Entities;
 
 namespace TpiDSW.Domain.Interfaces;
+
+public interface ITurnoRepository
 {
-    public interface ITurnoRepository
-    {
-        List<Turno> GetAll();
+    List<Turno> GetAll();
 
-        Turno? GetById(Guid id);
+    Turno? GetById(Guid id);
 
-        List<Turno> GetByFecha(DateOnly fecha);
+    void Add(Turno turno);
 
-        List<Turno> GetByDisponibilidadId(Guid disponibilidadId);
+    void Update(Turno turno);
 
-        void Add(Turno turno);
-
-        void Update(Turno turno);
-
-        void Delete(Guid id);
-    }
+    void Delete(Guid id);
 }

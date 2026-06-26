@@ -1,21 +1,34 @@
 ﻿using System;
 
 namespace TpiDSW.Domain.Entities;
+
 public class Especialidad
 {
+    private Guid _id;
     private string _nombre;
     private string _descripcion;
-    private bool _activa;
+    private bool _deleted;
 
     public Especialidad()
     {
+        _id = Guid.NewGuid();
+        _nombre = string.Empty;
+        _descripcion = string.Empty;
+        _deleted = false;
     }
 
-    public Especialidad(string nombre, string descripcion, bool activa)
+    public Especialidad(string nombre, string descripcion)
     {
+        _id = Guid.NewGuid();
         _nombre = nombre;
         _descripcion = descripcion;
-        _activa = activa;
+        _deleted = false;
+    }
+
+    public Guid Id
+    {
+        get { return _id; }
+        set { _id = value; }
     }
 
     public string Nombre
@@ -30,9 +43,9 @@ public class Especialidad
         set { _descripcion = value; }
     }
 
-    public bool Activa
+    public bool Deleted
     {
-        get { return _activa; }
-        set { _activa = value; }
+        get { return _deleted; }
+        set { _deleted = value; }
     }
 }

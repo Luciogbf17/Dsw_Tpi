@@ -1,23 +1,18 @@
 ﻿using System;
-
-using MedicalAppointments.Domain.Entities;
+using System.Collections.Generic;
+using TpiDSW.Domain.Entities;
 
 namespace TpiDSW.Domain.Interfaces;
+
+public interface ICitaRepository
 {
-    public interface ICitaRepository
-    {
-        List<Cita> GetAll();
+    List<Cita> GetAll();
 
-        Cita? GetById(Guid id);
+    Cita? GetById(Guid id);
 
-        List<Cita> GetByPacienteId(Guid pacienteId);
+    void Add(Cita cita);
 
-        List<Cita> GetByFecha(DateTime fecha);
+    void Update(Cita cita);
 
-        void Add(Cita cita);
-
-        void Update(Cita cita);
-
-        void Delete(Guid id);
-    }
+    void Delete(Guid id);
 }

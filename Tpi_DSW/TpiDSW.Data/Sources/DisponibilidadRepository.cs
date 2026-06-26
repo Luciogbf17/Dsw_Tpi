@@ -1,46 +1,49 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
-using TpiDSW.Domain.Interfaces;
 using TpiDSW.Domain.Entities;
+using TpiDSW.Domain.Interfaces;
 
-namespace TpiDSW.Data.Sources
+namespace TpiDSW.Data.Sources;
+
+public class DisponibilidadRepository : IDisponibilidadRepository
 {
-    public class DisponibilidadRepository : IDisponibilidadRepository
+    private readonly List<Disponibilidad> _disponibilidades;
+
+    public DisponibilidadRepository()
     {
-        public void Add(Disponibilidad disponibilidad)
-        {
-            throw new NotImplementedException();
-        }
+        _disponibilidades = new List<Disponibilidad>();
+    }
 
-        public void Delete(Guid id)
-        {
-            throw new NotImplementedException();
-        }
+    public List<Disponibilidad> GetAll()
+    {
+        return _disponibilidades;
+    }
 
-        public List<Disponibilidad> GetAll()
-        {
-            throw new NotImplementedException();
-        }
+    public Disponibilidad? GetById(Guid id)
+    {
+        return null;
+    }
 
-        public Disponibilidad? GetById(Guid id)
-        {
-            throw new NotImplementedException();
-        }
+    public List<Disponibilidad> GetByMedicoId(Guid medicoId)
+    {
+        return new List<Disponibilidad>();
+    }
 
-        public List<Disponibilidad> GetByMedicoId(Guid medicoId)
-        {
-            throw new NotImplementedException();
-        }
+    public List<Disponibilidad> GetByMedicoIdAndMes(Guid medicoId, int mes, int anio)
+    {
+        return new List<Disponibilidad>();
+    }
 
-        public List<Disponibilidad> GetByMedicoIdAndMes(Guid medicoId, int mes, int anio)
-        {
-            throw new NotImplementedException();
-        }
+    public void Add(Disponibilidad disponibilidad)
+    {
+        _disponibilidades.Add(disponibilidad);
+    }
 
-        public void Update(Disponibilidad disponibilidad)
-        {
-            throw new NotImplementedException();
-        }
+    public void Update(Disponibilidad disponibilidad)
+    {
+    }
+
+    public void Delete(Guid id)
+    {
     }
 }

@@ -1,40 +1,69 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
-using TpiDSW.Domain.Interfaces;
+using System.Linq;
 using TpiDSW.Domain.Entities;
-namespace TpiDSW.Data.Sources
+using TpiDSW.Domain.Interfaces;
+
+namespace TpiDSW.Data.Sources;
+
+public class EspecialidadRepository : IEspecialidadRepository
 {
-    public class EspecialidadRepository : IEspecialidadRepository
+    private readonly List<Especialidad> _especialidades;
+
+    public EspecialidadRepository()
     {
-        public void Add(Especialidad especialidad)
+        _especialidades = new List<Especialidad>();
+    }
+
+    public List<Especialidad> GetAll()
+    {
+        return _especialidades
+            .Where(especialidad => !especialidad.Deleted)
+            .ToList();
+    }
+
+    public Especialidad? GetById(Guid id)
+    {
+        return _especialidades
+            .FirstOrDefault(especialidad => especialidad.Id == id && !especialidad.Deleted);
+    }
+
+    public List<Especialidad> GetByNombre(string nombre)
+    {
+        return _especialidades
+            .Where(especialidad =>
+                !especialidad.Deleted &&
+                especialidad.Nombre.Contains(nombre, StringComparison.OrdinalIgnoreCase))
+            .ToList();
+    }
+
+    public void Add(Especialidad especialidad)
+    {
+        _especialidades.Add(especialidad);
+    }
+
+    public void Update(Especialidad especialidad)
+    {
+        Especialidad? especialidadExistente = GetById(especialidad.Id);
+
+        if (especialidadExistente == null)
         {
-            throw new NotImplementedException();
+            return;
         }
 
-        public void Delete(Guid id)
+        especialidadExistente.Nombre = especialidad.Nombre;
+        especialidadExistente.Descripcion = especialidad.Descripcion;
+    }
+
+    public void Delete(Guid id)
+    {
+        Especialidad? especialidad = GetById(id);
+
+        if (especialidad == null)
         {
-            throw new NotImplementedException();
+            return;
         }
 
-        public List<Especialidad> GetAll()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Especialidad? GetById(Guid id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<Especialidad> GetByNombre(string nombre)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Update(Especialidad especialidad)
-        {
-            throw new NotImplementedException();
-        }
+        especialidad.Deleted = true;
     }
 }
