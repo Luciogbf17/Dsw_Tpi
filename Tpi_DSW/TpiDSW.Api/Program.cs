@@ -16,7 +16,10 @@ public class Program
 
         builder.Services.AddSingleton<IEspecialidadRepository, EspecialidadRepository>();
         builder.Services.AddSingleton<IMedicoRepository, MedicoRepository>();
+        builder.Services.AddSingleton<IPacienteRepository, PacienteRepository>();
         builder.Services.AddSingleton<IDisponibilidadRepository, DisponibilidadRepository>();
+        builder.Services.AddSingleton<ITurnoRepository, TurnoRepository>();
+        builder.Services.AddSingleton<ICitaRepository, CitaRepository>();
 
         WebApplication app = builder.Build();
 

@@ -1,5 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
 using TpiDSW.Domain.Entities;
 
 namespace TpiDSW.Domain.Interfaces;
@@ -9,6 +7,10 @@ public interface ITurnoRepository
     List<Turno> GetAll();
 
     Turno? GetById(Guid id);
+
+    List<Turno> GetByFecha(DateOnly fecha);
+
+    List<Turno> GetByDisponibilidadId(Guid disponibilidadId);
 
     void Add(Turno turno);
 
