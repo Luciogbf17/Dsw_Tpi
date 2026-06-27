@@ -76,7 +76,8 @@ namespace TpiDSW.Api.Controllers
             LoginResponse response = new LoginResponse
             {
                 Token = token,
-                Role = UserRoles.ADMINISTRADOR
+                Role = UserRoles.ADMINISTRADOR,
+                UserId = administrador.Id
             };
 
             return Ok(response);
@@ -117,7 +118,8 @@ namespace TpiDSW.Api.Controllers
             LoginResponse response = new LoginResponse
             {
                 Token = token,
-                Role = UserRoles.PACIENTE
+                Role = UserRoles.PACIENTE,
+                UserId = paciente.Id
             };
 
             return Ok(response);
